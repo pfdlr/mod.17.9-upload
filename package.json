@@ -1,0 +1,16 @@
+{
+  "name": "mod.17.9-upload-node.js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:pfdlr/mod.17.9-upload.git",
+  "author": "Piotr Fidler <fidler.piotr@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "colors": "^1.3.3",
+    "formidable": "^1.2.1"
+  }
+}
