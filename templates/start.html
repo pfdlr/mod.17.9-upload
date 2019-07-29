@@ -1,19 +1,50 @@
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <style></style>
-  </head>
-  <body>
-    <h1>Wgraj plik</h1>
-    <form action="/upload" enctype="multipart/form-data" method="post">
-      <!--
-        <label>Tytuł pliku</label>
-      <input type="text" name="title" />
-      -->
-      <br />
-      <label>Plik</label>
-      <input type="file" name="upload" multiple="multiple" /><br />
-      <input type="submit" value="Wyślij" />
-    </form>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Upload</title>
+  <style>
+    * {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 300px;
+      margin: auto;
+      background-color: rgb(125, 188, 190);
+    }
+
+    label {
+      text-transform: uppercase;
+      text-align: center;
+      background-color: rgb(216, 178, 108);
+      margin-bottom: 15px;
+      padding: 5px;
+    }
+
+    input {
+      height: 35px;
+      margin: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Wgraj plik</h1>
+  <form action="/upload" enctype="multipart/form-data" method="post">
+    <br />
+    <label>Plik</label>
+    <input type="file" name="upload" accept="image/png, image/jpeg" required/><br />
+    <input type="submit" value="Wyślij" />
+  </form>
+</body>
+
 </html>
